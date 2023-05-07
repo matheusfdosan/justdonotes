@@ -20,9 +20,8 @@ function showNotes() {
   })
 }
 
-data = JSON.parse(localStorage.getItem("data"))
-
-if (data.length != 0) {
+if (JSON.parse(localStorage.getItem("data"))) {
+  data = JSON.parse(localStorage.getItem("data"))
   showNotes()
 }
 
@@ -57,11 +56,11 @@ document.querySelector(".add-note").addEventListener("click", () => {
 
   data.push(new Note(title.value, note.value))
 
+  localStorage.setItem("data", JSON.stringify(data))
+
   document.querySelector(".main-container .container").innerHTML = ""
 
   showNotes()
-
-  localStorage.setItem("data", JSON.stringify(data))
 
   title.value = ""
   note.value = ""
@@ -139,6 +138,7 @@ function optionCard(event) {
       saveButton.remove()
 
       options.insertAdjacentElement("afterbegin", saveButton)
+      window.location.reload()
     })
 
     saveButton.addEventListener("click", () => {
