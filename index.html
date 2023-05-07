@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="assets/jdn.svg" type="image/x-icon" />
+    <meta name="description" content="Um site bonitão para fazer anotações" />
+    <meta
+      name="image"
+      content="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>JustDoNotes</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <h1>JustDoNotes</h1>
+        </div>
+
+        <div class="create-note-button">
+          <img src="assets/plus.svg" alt="cross" />
+          <span>Create note</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <h2>Notes:</h2>
+        <div class="container"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <span
+          >By
+          <a href="https://github.com/matheusfdosan" target="_blank"
+            >Matheus Faustino</a
+          ></span
+        >
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal-overlay">
+        <div class="writing-field">
+          <input type="text" class="title" placeholder="Title..." />
+          <textarea class="notes" placeholder="Write here"></textarea>
+        </div>
+
+        <div class="options">
+          <button class="add-note">Add note</button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
