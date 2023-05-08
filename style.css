@@ -241,8 +241,8 @@ footer {
 }
 
 .modal.active .modal-overlay .options button:nth-child(1) {
-  border-color: #0f0;
-  color: #0f0;
+  border-color: #1fc91f;
+  color: #1fc91f;
 }
 
 .modal.active .modal-overlay .options button {
