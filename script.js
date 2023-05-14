@@ -6,7 +6,7 @@ function showNotes() {
     <div class="card" data-title="${element.title}" title="${element.title}">
       <div class="content">
         <h1>${element.title}</h1>
-        <p>${element.note}</p>
+        <textarea disable>${element.note}</textarea>
       </div>
       <div class="options">
         <img src="assets/trash.svg" alt="delete" class="delete-note" title="Delete note" />

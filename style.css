@@ -115,9 +115,17 @@ main h2 {
   word-break: keep-all;
 }
 
-.card .content p {
-  opacity: 0.8;
+.card .content textarea {
+  width: 100%;
+  height: 6'0%;
+  resize: none;
+  border: none;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   overflow: hidden;
